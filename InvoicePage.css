@@ -1,0 +1,1551 @@
+.main-body {
+
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    padding: 0;
+
+
+
+
+}
+
+.logo-container {
+    text-align: center;
+    padding: 20px;
+
+}
+
+.logo-container img {
+    width: 35px;
+    height: 25px;
+    margin-top: -10px;
+}
+
+.drawer {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 12px 0 24px rgba(0, 0, 0, 0.1);
+
+    gap: 12px;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+
+
+}
+
+.text {
+
+    font-weight: 400;
+    color: gray;
+    font-size: 10px;
+    font-weight: 600;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+
+    color: rgba(159, 159, 159);
+
+}
+
+.dashboard-icon {
+    height: 24px;
+    width: 24px;
+    padding: 7px;
+
+
+
+}
+
+.test1 {
+    display: flex;
+
+}
+
+.parent {
+    display: flex
+}
+
+
+
+.icon-main {
+
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+
+
+
+}
+
+.icon-main:first-child {
+    margin-top: 60px;
+}
+
+
+.icon-name {
+    display: none;
+}
+
+
+.drawer:hover {
+    align-items: flex-start;
+    width: 310px;
+    background-color: white;
+}
+
+.drawer:hover .icon-name {
+    display: block;
+
+
+}
+
+.hover-logo {
+    display: none;
+
+}
+
+.drawer:hover .hover-logo {
+    display: block;
+    height: 25px;
+    width: 100px;
+
+}
+
+.drawer:hover .logo-container {
+    margin-left: 0px;
+}
+
+.drawer:hover .main-logo {
+    display: none;
+}
+
+
+.drawer:hover .icon-main {
+    margin-left: 20px;
+}
+
+.drawer:hover .text {
+    margin-left: 25px;
+}
+
+.drawer:hover {
+    overflow-y: scroll;
+
+}
+
+.drawer:hover .icon-main:first-child {
+    margin-top: 0px;
+}
+
+
+
+
+
+
+.sales_menu {
+
+
+    height: 750px;
+    background-color: #f7f7f8;
+    margin-left: 95px;
+}
+
+.sales_menu h4 {
+    text-align: left;
+    padding: 10px;
+
+    font-size: .75rem;
+    line-height: 1rem;
+    font-weight: 550;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    margin-top: 16px;
+    color: #7e7e7e;
+    white-space: nowrap;
+    font-stretch: 150%;
+    margin-left: 5px;
+
+}
+
+.sales-header {
+    text-align: left;
+    padding: 10px;
+    font-size: .75rem;
+    line-height: 1rem;
+    font-weight: 550;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    margin-top: 16px;
+    color: #7e7e7e;
+    white-space: nowrap;
+    font-stretch: 150%;
+    margin-left: 5px;
+
+
+
+
+}
+
+.sales-menu-list {
+
+    height: 550px;
+    width: 230px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.sales-menu-list-names {
+    list-style-type: none;
+    margin-left: -30px;
+}
+
+.sales-menu-list-names li {
+    margin-bottom: 19px;
+    font-size: 17px;
+    font-weight: 200;
+    font-family: Montserrat, sans-serif;
+    ;
+    letter-spacing: 1px;
+
+
+}
+
+.sales-menu-list-names li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.857);
+    line-height: -2px;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0px;
+    font-stretch: 150%;
+
+    font-weight: 400;
+
+
+
+}
+
+
+.invoice-dashboard {
+
+    width: 1220px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header-page {
+    background-color: white;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid rgba(236, 236, 236, 1);
+    position: sticky;
+    top: 0;
+    z-index: 180;
+
+
+}
+
+.invoice-list {
+    width: 380px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+
+.header-page p {
+
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Montserrat, sans-serif;
+    margin-top: 6px;
+    color: rgb(94, 5, 132);
+    width: 100px;
+    margin-left: 6px;
+
+}
+
+.invoice-header-title {
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Montserrat, sans-serif;
+    margin-top: 6px;
+    color: rgb(94, 5, 132);
+    width: 100px;
+
+}
+
+.page-header-menu {
+    height: 100%;
+    width: 100%;
+
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.pay-vendor-panel {
+
+    height: 50px;
+    width: 170px;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.pay-vendor-button {
+
+    width: 140px;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(94, 5, 132);
+    border-radius: 30px;
+    margin-left: 6px;
+    margin-top: 7px;
+    font-family: Montserrat, sans-serif;
+    color: rgb(94, 5, 132);
+    font-weight: 600;
+    font-size: 12px;
+    margin-right: 10px;
+
+}
+
+
+
+.contact-icon {
+
+    height: 50px;
+    width: 50px;
+    margin-right: 2px;
+
+}
+
+.contact-icon svg {
+    height: 25px;
+    width: 25px;
+    padding: 10px;
+    fill: rgb(104, 106, 108);
+}
+
+.settings-icon {
+
+    height: 50px;
+    width: 50px;
+
+    margin-right: 10px;
+}
+
+.settings-icon svg {
+    height: 25px;
+    width: 25px;
+    padding: 10px;
+    fill: rgb(104, 106, 108);
+}
+
+
+.invoice-action-menu {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+
+}
+
+
+.invoice-actions {
+
+    width: 50%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 6px;
+
+
+}
+
+.create-invoice-button {
+    text-align: center;
+    width: 92px;
+    height: 32px;
+    background-color: rgba(102, 51, 153, 1);
+    color: white;
+    font-family: Montserrat, sans-serif;
+    border-radius: 10px;
+    margin-top: 13px;
+    margin-right: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+}
+
+.invoice-list-header {
+
+    width: 100%;
+    height: 30px;
+
+}
+
+.invoice-list-items {
+
+
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+
+
+}
+
+.invoice-list-item-one {
+
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.search-icon,
+.filter-icon,
+.download-icon {
+    height: 18px;
+    width: 18px;
+    margin-left: 7px;
+    margin-right: 5px;
+    margin-top: 1px;
+    margin-bottom: -2px;
+    align-self: center;
+    padding-bottom: 14px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: rgb(222, 224, 225);
+    padding: 5px;
+    border-width: 1px;
+    opacity: 0.5;
+
+
+
+}
+
+.check-box {
+    height: 15px;
+    width: 15px;
+    margin-top: 25px;
+    margin-left: 8px;
+    color: green;
+
+}
+
+
+
+.shortcut-name-area {
+    height: 15px;
+    width: 15px;
+    margin-top: 23px;
+    margin-left: 6px;
+    color: rgba(150, 67, 179, 1);
+    ;
+    font-weight: 200px;
+    width: 10px;
+    height: 12px;
+    margin-right: 7px;
+
+}
+
+.shortcut-name {
+
+    border: solid;
+    border-radius: 50%;
+    border-width: 1px;
+    padding: 8px;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    color: rgba(150, 67, 179, 1);
+    width: 8px;
+    height: 8px;
+
+
+}
+
+.customer-name-area {
+    margin-left: 25px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.customer-name {
+    font-weight: 600;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+
+}
+
+.invoice-date {
+    margin-top: 2px;
+    font-size: 12px;
+    font-family: Montserrat, sans-serif;
+}
+
+.invoice-amount-area {
+
+    margin-left: 140px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.invoice-amount {
+    font-weight: 600;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+
+    margin-left: 13px;
+}
+
+.invoice-status {
+    margin-top: 2px;
+    font-size: 12px;
+    margin-left: 0px;
+    font-family: Montserrat, sans-serif;
+    color: #fe9b0e;
+    font-weight: 500;
+    margin-top: 3px;
+}
+
+.invoice-list-header {
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.sent-header {
+    margin-top: 6px;
+    margin-left: 10px;
+    font-weight: 200px;
+    font-family: Montserrat, sans-serif;
+    color: rgba(118, 118, 118, 1);
+}
+
+.due-header {
+    margin-top: 6px;
+    margin-right: 17px;
+    font-weight: 200px;
+    font-family: Montserrat, sans-serif;
+    color: rgba(118, 118, 118, 1);
+}
+
+.invoice-reciept {
+    height: 500px;
+    width: 500px;
+
+}
+
+.invoice-content-panel {
+
+    display: flex;
+    overflow: auto;
+}
+
+.invoice-preview-panel {
+    background-color: rgba(236, 236, 236, 236);
+
+
+    width: 728px;
+    margin-top: 0px;
+
+    overflow-y: scroll;
+    max-height: auto;
+
+}
+
+.invoice-preview-data-holder {
+    height: 92%;
+    width: 92%;
+    margin: 25px;
+
+    background-color: white;
+    padding: 4px;
+    margin-top: 40px;
+}
+
+.invoice-id-details {
+    height: 260px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: rgba(236, 236, 236, 236) solid 22px;
+    margin-left: -10px;
+    margin-right: -40px;
+    padding-right: 15px;
+
+
+}
+
+.invoice-id-header {
+    height: 90px;
+    width: 95%;
+
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.invoice-id-header h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 16px;
+}
+
+.invoice-number-details {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: Montserrat, sans-serif;
+}
+
+.invoice-dropdown-header {
+
+    margin-top: 10px;
+    margin-right: 5px;
+    font-weight: bold;
+    width: 250px;
+    display: flex;
+
+    justify-content: end;
+
+
+}
+
+.actions-button {
+    font-family: Montserrat, sans-serif;
+    background-color: white;
+    font-weight: 600;
+    width: 175px;
+    height: 38px;
+    border-width: 1px;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: rgb(236, 236, 236, 1);
+
+
+
+
+}
+
+.actions-button:hover {
+    background-color: rgba(249, 246, 246, 0.633);
+}
+
+
+
+.invoice-customer-panel {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 95%;
+
+    margin-left: 15px;
+    border-bottom: 1px solid rgb(225, 222, 222);
+    justify-content: space-between;
+}
+
+.customer-name-details {
+    height: 100%;
+    width: 50%;
+
+
+}
+
+
+
+.customer-type-name {
+
+    margin-left: 16px;
+    font-family: Montserrat, sans-serif;
+}
+
+.customer-type-name p {
+    margin-bottom: 0px;
+    font-size: 13px;
+
+}
+
+.customer-type-name h4 {
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+
+
+.customer-other-details {
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.due_amount_details {
+
+    height: 100%;
+    width: 40%;
+
+
+}
+
+.due_date_details {
+
+    height: 100%;
+    width: 60%;
+
+
+}
+
+.amount-data {
+    margin-left: 30px;
+    font-family: Montserrat, sans-serif;
+
+}
+
+.amount-data p {
+
+    margin-bottom: 0px;
+    font-size: 13px;
+
+}
+
+.amount-data h4 {
+
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+.date-data {
+    text-align: right;
+    font-family: Montserrat, sans-serif;
+}
+
+.date-data p {
+    margin-bottom: 0px;
+    margin-right: 2px;
+    font-size: 13px;
+
+}
+
+.date-data h4 {
+    margin-top: 0px;
+    margin-right: 2px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+.invoice-status-buttons {
+    height: 90px;
+    width: 95%;
+    margin-top: 7px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.invoice-status-details {
+
+    height: 100%;
+    width: 40%;
+
+
+}
+
+.invoice-buttons-details {
+
+    height: 100%;
+    width: 70%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+
+
+}
+
+.invoice-buttons-details input {
+    margin-right: 10px;
+}
+
+
+
+.invoice-status-check {
+
+    height: 45px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.success-symbol {
+
+    height: 80%;
+    width: 40px;
+    border-radius: 50px;
+
+}
+
+
+.success-symbol img {
+    height: 42px;
+    width: 42px;
+    padding: 2px;
+}
+
+.invoice-and-status {
+
+
+    height: 40px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Montserrat, sans-serif;
+    margin-left: 5px;
+
+}
+
+.invoice-text {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.invoice-text h3 {
+    margin-top: 0px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.invoice-text span {
+    font-size: 10px;
+    background-color: #ffeab3;
+    margin-left: 7px;
+    margin-top: 0px;
+    height: 14px;
+    border-radius: 50px;
+    width: 52px;
+    padding: 2px;
+    text-align: center;
+    font-weight: 500;
+
+}
+
+.invoice-and-status p {
+    margin-top: -9px;
+    margin-left: 6px;
+    font-size: 12px;
+
+}
+
+#preview-btn {
+    height: 40px;
+    width: 92px;
+    font-weight: 600;
+    color: rgb(102, 51, 153, 1);
+    margin-left: 65px;
+    background-color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    border-radius: 7px;
+    border-style: none;
+
+}
+
+#preview-btn:hover {
+    background-color: rgb(247, 243, 243);
+}
+
+#edit-btn {
+    height: 40px;
+    width: 92px;
+    font-weight: 600;
+    color: black;
+    margin-left: 15px;
+    margin-right: -4px;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+    border-color: rgb(236, 236, 236, 1);
+
+}
+
+#edit-btn:hover {
+    background-color: rgb(247, 243, 243);
+}
+
+#status-history-btn {
+    height: 40px;
+    width: 145px;
+    font-weight: 500;
+    background-color: rgb(102, 51, 153, 1);
+    color: white;
+    margin-left: 15px;
+    margin-right: -8px;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    border-radius: 7px;
+    border-style: none;
+}
+
+.e-invoice-holder {
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    flex-direction: column;
+    border-bottom: rgba(236, 236, 236, 236) solid 22px;
+    margin-left: -10px;
+    margin-right: -40px;
+    padding-right: 15px
+}
+
+.e-invoice-data-holder {
+
+
+    width: 650px;
+    height: 58px;
+    margin-left: 30px;
+    margin-top: 15px;
+
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+
+.e-invoice-symbol {
+
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(102, 51, 153, 1);
+    font-size: 15px;
+    font-weight: 100px;
+    border-width: 1px;
+    color: rgb(87, 2, 116);
+    fill: rgb(102, 51, 153, 1);
+
+
+
+}
+
+.e-invoice-symbol g {
+    color: rgb(102, 51, 153, 1);
+}
+
+.e-invoice-symbol svg {
+    color: rgb(87, 2, 116);
+
+}
+
+
+
+
+
+.e-invoice-content {
+
+    height: 52px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 7px;
+
+}
+
+.e-invoice-text {
+
+    height: 50px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+    font-size: 12px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+}
+
+.e-invoice-hdr {
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.e-invoice-button {
+
+    height: 50px;
+    width: 100px;
+    margin-left: 1px;
+
+
+}
+
+.e-invoice-button button {
+    height: 40px;
+    width: 210px;
+    margin-top: 4px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #dbdbde;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+
+
+}
+
+.e-invoice-button svg {
+    height: 15px;
+    width: 15px;
+
+
+
+
+}
+
+.e-invoice-button span {
+    font-size: 15px;
+}
+
+.payment-details-holder {
+    width: 100%;
+    background-color: white;
+    border-bottom: 22px solid rgba(236, 236, 236, 0.9);
+    margin-left: -3px;
+    margin-right: -40px;
+    padding-right: 10px;
+    position: relative;
+
+
+}
+
+.payment-details-inside-holder {
+    background-color: white;
+    width: calc(100% - 15px);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.payment-details-header-part {
+    height: 80px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+
+}
+
+.rupee-symbol {
+
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(102, 51, 153, 1);
+    font-size: 15px;
+    font-weight: 100px;
+    margin-top: 17px;
+    margin-left: 14px;
+    fill: rgb(102, 51, 153, 1);
+    border-width: 1px;
+
+
+
+}
+
+.payment-details-header {
+
+
+    margin-left: 8px;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 17px;
+
+}
+
+
+
+.payment-details-header p {
+    margin-top: 5px;
+}
+
+.payment-details-body-part {
+    height: 100%;
+    width: 100%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.payment-details-body-part-one {
+    height: 100%;
+    width: 40px;
+
+}
+
+.payment-details-body-part-two {
+    height: 100%;
+    width: 102%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.choose-mode {
+    font-size: 12px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    margin-top: 2px;
+    margin-left: 4px;
+}
+
+.pay-cash {
+    font-size: 12px;
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    margin-top: 14px;
+    margin-left: 1px;
+
+
+}
+
+.online-payment {
+    height: 55px;
+    width: 97%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(236, 236, 236, 1);
+    border-radius: 5px;
+}
+
+.online-payment-data {
+    position: relative;
+    height: 48px;
+    width: 590px;
+    margin-left: 4px;
+    margin-top: -4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(236, 236, 236, 1);
+    border-radius: 5px;
+
+
+
+}
+
+.online-data {
+    height: 100%;
+    width: 330px;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    margin-left: 8px;
+}
+
+.online-header {
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-family: Montserrat, sans-serif;
+    margin-left: 6px;
+
+}
+
+.online-cards-images {
+    width: 190px;
+    height: 40px;
+    margin-top: 2px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.online-cards-images img {
+    height: 30px;
+    width: 30px;
+
+}
+
+.online-cards-images img:nth-child(1) {
+    height: 40px;
+    width: 50px;
+
+}
+
+.online-cards-images img:not(:first-child) {
+    margin-top: 5px;
+}
+
+
+
+.online-toggle {
+    height: 25px;
+    width: 40px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    margin-right: 14px;
+}
+
+.online-toggle img {
+    height: 35px;
+    width: 40px;
+
+}
+
+
+
+
+.bank-transfer-data {
+    position: relative;
+    height: 48px;
+    width: 590px;
+    margin-left: 4px;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(236, 236, 236, 1);
+    border-radius: 5px;
+
+}
+
+.bank-data {
+    height: 100%;
+    width: 330px;
+    margin-left: 8px;
+}
+
+.bank-data h3 {
+
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    margin-left: 6px;
+}
+
+.bank-toggle {
+    height: 25px;
+    width: 40px;
+    margin-bottom: 12px;
+    margin-right: 14px;
+}
+
+.bank-toggle img {
+    height: 35px;
+    width: 40px;
+
+}
+
+.upi-payment-data {
+    position: relative;
+    height: 48px;
+    width: 590px;
+    margin-left: 4px;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(236, 236, 236, 1);
+    border-radius: 5px;
+
+}
+
+.upi-data {
+    height: 100%;
+    width: 430px;
+    margin-bottom: 7px;
+    margin-left: 8px;
+}
+
+.upi-data h3 {
+
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    margin-left: 6px;
+
+}
+
+.upi-data h3 span {
+    font-size: 12px;
+    font-family: Montserrat, sans-serif;
+    vertical-align: middle;
+    font-weight: normal;
+
+}
+
+.upi-toggle {
+    height: 25px;
+    width: 40px;
+    margin-bottom: 15px;
+    margin-right: 14px;
+}
+
+.upi-toggle img {
+    height: 35px;
+    width: 40px;
+}
+
+
+.cash-payment-data {
+    position: relative;
+    height: 48px;
+    width: 590px;
+    margin-left: 2px;
+    margin-top: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(236, 236, 236, 1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+
+}
+
+.cash-data {
+    height: 100%;
+    width: 330px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+}
+
+.cash-data h3 {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    margin-left: 10px;
+
+}
+
+.cash-toggle {
+    height: 25px;
+    width: 40px;
+    margin-bottom: 20px;
+    margin-top: 4px;
+    margin-right: 14px;
+}
+
+.cash-toggle img {
+    height: 35px;
+    width: 40px;
+}
+
+.bank-transfer {
+    height: 55px;
+    width: 97%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(236, 236, 236, 1);
+    border-radius: 5px;
+    margin-top: 7px;
+
+}
+
+.upi-payment {
+    height: 55px;
+    width: 97%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(236, 236, 236, 1);
+    border-radius: 5px;
+    margin-top: 7px;
+}
+
+.cash-payment {
+    height: 55px;
+    width: 97%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(236, 236, 236, 1);
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+
+
+.send-invoice-holder {
+
+    width: 99.3%;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: rgba(236, 236, 236, 236) solid 22px;
+    margin-left: -3px;
+    margin-right: -40px;
+    padding-right: 15px
+}
+
+.send-invoice-holder-content {
+
+    width: 95%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    margin-top: 20px;
+    justify-content: space-between;
+
+}
+
+.send-invoice-data {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.send-invoice-button {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+}
+
+.send-button {
+    background-color: rgba(102, 51, 153, 1);
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    height: 42px;
+    width: 145px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    margin-top: 22px;
+    border: none;
+
+}
+
+.send-invoice-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: -3px;
+}
+
+
+
+.send-invoice-icon img {
+    height: 15px;
+    width: 15px;
+    border: solid;
+    border-color: rgb(102, 51, 153, 1);
+    border-radius: 50px;
+    border-width: 1px;
+    padding: 7px;
+    margin-top: 5px;
+    fill: rgb(102, 51, 153, 1);
+
+}
+
+.social-media-icons {
+    width: 50px;
+    height: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-media-icons img {
+    width: 15px;
+    height: 15px;
+    border: none;
+    margin-left: 2px;
+}
+
+.send-invoice-text {
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    margin-left: 5px;
+    font-weight: 600;
+    margin-left: 0px;
+
+
+}
