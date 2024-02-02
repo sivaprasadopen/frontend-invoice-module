@@ -120,18 +120,18 @@ body {
     fill: rgb(104, 106, 108);
 }
 
-.logo-container {
+.open-logo-container {
     text-align: center;
     padding: 20px;
 }
 
-.logo-container img {
+.open-logo-container img {
     width: 36px;
     height: 24px;
     margin-top: -10px;
 }
 
-.logo-container .hover-logo {
+.open-logo-container .open-text-logo {
     position: sticky;
     top: 0;
     z-index: 180;
@@ -153,7 +153,7 @@ body {
 
 }
 
-.text {
+.side-menu-group-text {
     font-weight: 400;
     color: gray;
     font-size: 10px;
@@ -197,19 +197,19 @@ body {
 
 }
 
-.hover-logo {
+.open-text-logo {
     display: none;
 
 }
 
-.drawer:hover .hover-logo {
+.drawer:hover .open-text-logo {
     display: block;
     height: 24px;
     width: 100px;
 
 }
 
-.drawer:hover .main-logo {
+.drawer:hover .open-image-logo {
     display: none;
 }
 
@@ -217,7 +217,7 @@ body {
     margin-left: 20px;
 }
 
-.drawer:hover .text {
+.drawer:hover .side-menu-group-text {
     margin-left: 24px;
 }
 
@@ -227,20 +227,35 @@ body {
 }
 
 .mobile-drawer {
-    background-color: white;
+    /* background-color: white; */
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
     box-shadow: 12px 0 24px rgba(0, 0, 0, 0.1);
     position: absolute;
-    width: 284px;
-    height: 1000vh;
+    width: 100%;
+    height: 100vh;
     z-index: 180;
+    overflow-x: hidden;
 }
 
 .mobile-drawer {
     display: none;
 }
+
+.mobile-overlay-screen {
+    /* display: none; */
+
+    background-color: rgb(0, 0, 0, 0.3);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    margin-left: 286px;
+
+}
+
+
+
 
 .sales_menu {
     grid-column: 2/ span 1;
@@ -1928,7 +1943,7 @@ body {
         margin-top: 60px;
     }
 
-    .mobile-text {
+    .mobile-side-menu-group-text {
         font-weight: 400;
         color: gray;
         font-size: 10px;
@@ -2071,6 +2086,11 @@ body {
     .mobile-side-menu-option-label.active .submenu-list ul {
         display: block;
     }
+
+
+
+
+
 
     .mobile-header-list-item {
         background-color: var(--project-button-color);

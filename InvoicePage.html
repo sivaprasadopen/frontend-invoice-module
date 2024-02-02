@@ -140,7 +140,7 @@
                     <span class="mobile-icon-name">Documents</span>
                 </div>
 
-                <div class="mobile-text">Essientials</div>
+                <div class="mobile-side-menu-group-text">Essientials</div>
 
                 <div class="mobile-side-menu-option-label">
                     <div class="mobile-icon-main">
@@ -221,7 +221,7 @@
                     </div>
                 </div>
 
-                <div class="mobile-text">UTILITIES</div>
+                <div class="mobile-side-menu-group-text">UTILITIES</div>
                 <div class="mobile-side-menu-option-label">
                     <div class="mobile-icon-main">
                         <div class="mobile-dashboard-icon">
@@ -376,7 +376,7 @@
                     <span class="mobile-icon-name">Banking</span>
                 </div>
 
-                <div class="mobile-text">FINANCING</div>
+                <div class="mobile-side-menu-group-text">FINANCING</div>
 
                 <div class="mobile-icon-main">
                     <div class="mobile-dashboard-icon">
@@ -396,7 +396,7 @@
                     <span class="mobile-icon-name">Credits</span>
                 </div>
 
-                <div class="mobile-text">TOOLS</div>
+                <div class="mobile-side-menu-group-text">TOOLS</div>
 
 
                 <div class="mobile-side-menu-option-label">
@@ -478,16 +478,21 @@
                 </div>
 
             </div>
+
+            <div class="mobile-overlay-screen" id="mobile-overlay-screen">
+
+            </div>
+
         </div>
 
 
         <div class="drawer">
 
-            <div class="logo-container">
-                <img class="main-logo" src="Assets/open-logo.svg" alt="Open Logo">
+            <div class="open-logo-container">
+                <img class="open-image-logo" src="Assets/open-logo.svg" alt="0pen_Logo">
 
-                <img class="hover-logo" src="https://open-frontend-bucket.s3.amazonaws.com/logos/logo-type-purple.svg"
-                    alt="hover-logo">
+                <img class="open-text-logo"
+                    src="https://open-frontend-bucket.s3.amazonaws.com/logos/logo-type-purple.svg" alt="open_text_logo">
             </div>
 
             <div class="icon-main">
@@ -544,7 +549,7 @@
                 <span class="icon-name">Documents</span>
             </div>
 
-            <div class="text">Essientials</div>
+            <div class="side-menu-group-text">Essientials</div>
 
             <div class="icon-main">
                 <div class="dashboard-icon">
@@ -582,7 +587,7 @@
                 <span class="icon-name">Collect</span>
             </div>
 
-            <div class="text">UTILITIES</div>
+            <div class="side-menu-group-text">UTILITIES</div>
             <div class="icon-main">
                 <div class="dashboard-icon">
 
@@ -654,7 +659,7 @@
                 <span class="icon-name">Banking</span>
             </div>
 
-            <div class="text">FINANCING</div>
+            <div class="side-menu-group-text">FINANCING</div>
 
             <div class="icon-main">
                 <div class="dashboard-icon">
@@ -674,7 +679,7 @@
                 <span class="icon-name">Credits</span>
             </div>
 
-            <div class="text">TOOLS</div>
+            <div class="side-menu-group-text">TOOLS</div>
 
             <div class="icon-main">
                 <div class="dashboard-icon">
@@ -793,7 +798,7 @@
 
         <div class="invoice-list" id="mobile-invoice-list">
 
-            <div class="invoice-action-menu">
+            <div class="invoice-action-menu" id="mobile-invoice-action-menu">
                 <div class="invoice-actions">
                     <div class="search-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fit="" height="100%" width="100%"
@@ -846,7 +851,7 @@
                 <span class="due-header">Total Due</span>
             </div>
             <div class="invoce-transaction-list-container">
-                <div class="list-item-transaction">
+                <div class="list-item-transaction" id="testoneid">
                     <div class="invoice-check"><input type="checkbox" class="check-box"></div>
                     <div class="shortcut-name-area"><span class="shortcut-name"> AB </span></div>
                     <div class="customer-name-area">ABCTest</div>
@@ -1376,12 +1381,31 @@
         var mobilePreviewPanelPage = document.getElementById('mobile-invoice-preview-panel');
         var mobileInvoiceListPage = document.getElementById('mobile-invoice-list');
         var mobiletopheaderpage = document.getElementById("mobile-invoice-list-top-menu-bar");
+        var mobileInvoiceActionBar = document.getElementById('mobile-invoice-action-menu');
 
         backButton.addEventListener('click', function () {
-            mobilePreviewPanelPage.style.display = 'none';
+            mobilePreviewPanelPage.style.display = (mobilePreviewPanelPage.style.display == 'none') ? 'block' : 'none';
+            mobileInvoiceActionBar.style.display = (mobileInvoiceActionBar == 'flex') ? 'none' : 'flex';
             mobileInvoiceListPage.style.display = 'block';
             mobiletopheaderpage.style.zIndex = '11';
         })
+
+
+
+        //This script is to open the invoice preview screen when we click any of the transaction label from invoice list
+
+        var invoiceTransaction = document.getElementsByClassName('list-item-transaction');
+        if (window.innerWidth > 320 && window.innerWidth < 767) {
+            for (var i = 0; i < invoiceTransaction.length; i++) {
+                invoiceTransaction[i].addEventListener('click', function () {
+                    mobilePreviewPanelPage.style.display = (mobilePreviewPanelPage.style.display == 'none') ? 'block' : 'none';
+                    mobileInvoiceActionBar.style.display = (mobileInvoiceActionBar == 'none') ? 'flex' : 'none';
+                    mobiletopheaderpage.style.zIndex = '9';
+                })
+
+            }
+        }
+
 
         // This script is to open the left side drawer when we click Humberg menu(3 lines button) from the invoice listing page in mobile view
 
@@ -1394,7 +1418,47 @@
             mobileDrawerPanel.style.display = (mobileDrawerPanel.style.display === 'flex') ? 'none' : 'flex';
             invoiceListPanel.style.marginLeft = '290px';
             mobileInvoiceListMenuBar.style.marginLeft = '310px';
+
+
+
+
         });
+
+        //This script is to close the side menu drawer, when we click on over lay screen
+
+        var overLayScreen = document.getElementById('mobile-overlay-screen');
+
+        overLayScreen.addEventListener('click', function () {
+            mobileDrawerPanel.style.display = (mobileDrawerPanel.style.display === 'flex') ? 'none' : 'flex';
+            invoiceListPanel.style.marginLeft = '0px';
+            mobileInvoiceListMenuBar.style.marginLeft = '0px';
+            console.log("drawer closed");
+
+        });
+
+
+
+
+        // for (var i = 0; i < invoiceTransaction.length; i++) {
+        //     invoiceTransaction[i].addEventListener('click', function () {
+        //         console.log("clicked on transaction")
+
+                // //  backButton.style.display = (backButton.style.display == 'block') ? 'none' : 'block';
+                // mobilePreviewPanelPage.style.display = (mobilePreviewPanelPage.style.display == 'block') ? 'none' : 'block';
+                // mobiletopheaderpage.style.display = (mobiletopheaderpage.style.display === 'none') ? 'flex' : 'none';
+                // mobileInvoiceActionBar.style.display = (mobileInvoiceActionBar.style.display === 'none') ? 'flex' : 'none'
+
+        //         mobiletopheaderpage.classList.remove('mobile-invoice-list-top-menu-bar');
+        //         mobileInvoiceActionBar.classList.remove('invoice-action-menu');
+        //         mobilePreviewPanelPage.classList.add('invoice-preview-panel');
+
+        //     })
+
+
+        // }
+
+
+
     </script>
 
 
